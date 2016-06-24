@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculator</title>
+    <meta name="description" content="An example basic webpage from The Iron Yard.">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="container text-left">
+        <h3>Calculator</h3>
+        <div class="row">
+            <div class="col-sm-7 col-offset-1 calculator-box">
+                <span><input type="button" class="btn btn-primary btn-sm" value="C" id="calcBtnC" /></span>
+                <input type="text" class="text-right" id="calcNum1" />
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <input type="button" class="btn btn-primary btn btn-secondary" value="7" id="calcBtn7" />
+                        <input type="button" class="btn btn-primary btn btn-secondary" value="8" id="calcBtn8" />
+                        <input type="button" class="btn btn-primary btn btn-secondary" value="9" id="calcBtn9" />
+                        <input type="button" class="btn btn-primary btn btn-secondary" value="/" id="calcBtnDivide" />
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group" role="group" aria-label="Second group">
+                                <input type="button" class="btn btn-primary btn btn-secondary" value="4" id="calcBtn4" />
+                                <input type="button" class="btn btn-primary btn btn-secondary" value="5" id="calcBtn5" />
+                                <input type="button" class="btn btn-primary btn btn-secondary" value="6" id="calcBtn6" />
+                                <input type="button" class="btn btn-primary btn btn-secondary" value="*" id="calcBtnMultiply" />
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group" role="group" aria-label="Third group">
+                                        <input type="button" class="btn btn-primary btn btn-secondary" value="1" id="calcBtn1" />
+                                        <input type="button" class="btn btn-primary btn btn-secondary" value="2" id="calcBtn2" />
+                                        <input type="button" class="btn btn-primary btn btn-secondary" value="3" id="calcBtn3" />
+                                        <input type="button" class="btn btn-primary btn btn-secondary" value="-" id="calcBtnMinus" />
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group" role="group" aria-label="Fourth group">
+                                                <input type="button" class="btn btn-primary btn btn-secondary" value="0" id="calcBtn0" />
+                                                <input type="button" class="btn btn-primary btn btn-secondary" value="." id="calcBtnDecimal" />
+                                                <input type="button" class="btn btn-primary btn btn-secondary" value="=" id="calcBtn" />
+                                                <input type="button" class="btn btn-primary btn btn-secondary" value="+" id="calcBtnPlus" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  <div class="calcAnswer">
+    <hr />
+    Answer: <span id="calcAnswerOutput"></span>
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>
